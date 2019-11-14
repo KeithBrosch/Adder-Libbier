@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/Adder-Libbier",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
