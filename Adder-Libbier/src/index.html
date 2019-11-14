@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,49 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
   <div class="content">
     <div class="content-inner">
-      <input id='txtInput1' placeholder="Adjective" /> <br>
-      <input id='txtInput2' placeholder="Adjective" /> <br>
-      <input id='txtInput3' placeholder="Adjective" /> <br>
-      <input id='txtInput4' placeholder="Adjective" /> <br>
-      <input id='txtInput5' placeholder="Verb" /> <br>
-      <input id='txtInput6' placeholder="Noun (place)" /> <br>
-      <input id='txtInput7' placeholder="Verb" /> <br>
-      <input id='txtInput8' placeholder="Noun (plural)" /> <br>
-      <input id='txtInput9' placeholder="Noun" /> <br>
-      <input id='txtInput10' placeholder="Verb" /> <br>
-      <input id='txtInput11' placeholder="Noun" /> <br>
-      <input id='txtInput12' placeholder="Verb" /> <br>
-      <input id='txtInput13' placeholder="Noun (plural)" /> <br>
-      <input id='txtInput14' placeholder="Verb" /> <br>
-      <input id='txtInput15' placeholder="Noun (plural)" /> <br>
-      <input id='txtInput16' placeholder="Noun" /> <br>
-      <input id='txtInput17' placeholder="Verb" /> <br>
-      <input id='txtInput18' placeholder="Noun (plural)" /> <br>
-      <input id='txtInput19' placeholder="Noun (plural)" /> <br>
-      <input id='txtInput20' placeholder="Adjective" /> <br>
-      <input id='txtInput21' placeholder="Noun (plural)" /> <br>
-      <input id='txtInput22' placeholder="Noun (plural)" /> <br>
-      <input id='txtInput23' placeholder="Adjective" /> <br>
-      <input id='txtInput24' placeholder="Adjective" /> <br>
-      <input id='txtInput25' placeholder="Adjective" /> <br>
-      <input id='txtInput26' placeholder="Verb" /> <br>
-      <input id='txtInput27' placeholder="Noun (plural)" /> <br>
-      <input id='txtInput28' placeholder="Verb" /> <br>
-      <input id='txtInput29' placeholder="Noun" /> <br>
-      <input id='txtInput30' placeholder="Adjective" /> <br>
-      <input id='txtInput31' placeholder="Adjective" /> <br>
-      <input id='txtInput32' placeholder="Noun" /> <br>
-      <input id='txtInput33' placeholder="Noun" /> <br>
-      <input id='txtInput34' placeholder="Noun" /> <br>
-      <input id='txtInput35' placeholder="Noun" /> <br>
-      <button id='btnSpeak'>OK</button>
+      <div class="content-left">
+        <input id='txtInput1' maxlength="20" placeholder="Adjective" /> <br>
+        <input id='txtInput2' maxlength="20" placeholder="Adjective" /> <br>
+        <input id='txtInput3' maxlength="20" placeholder="Adjective" /> <br>
+        <input id='txtInput4' maxlength="20" placeholder="Adjective" /> <br>
+        <input id='txtInput20' maxlength="20" placeholder="Adjective" /> <br>
+        <input id='txtInput23' maxlength="20" placeholder="Adjective" /> <br>
+        <input id='txtInput24' maxlength="20" placeholder="Adjective" /> <br>
+        <input id='txtInput25' maxlength="20" placeholder="Adjective" /> <br>
+        <input id='txtInput30' maxlength="20" placeholder="Adjective" /> <br>
+        <input id='txtInput31' maxlength="20" placeholder="Adjective" /> <br>
+        <input id='txtInput5' maxlength="20" placeholder="Verb" /> <br>
+        <input id='txtInput26' maxlength="20" placeholder="Verb" /> <br>
+        <input id='txtInput12' maxlength="20" placeholder="Verb" /> <br>
+        <input id='txtInput17' maxlength="20" placeholder="Verb" /> <br>
+        <input id='txtInput10' maxlength="20" placeholder="Verb" /> <br>
+        <input id='txtInput14' maxlength="20" placeholder="Verb" /> <br>
+        <input id='txtInput7' maxlength="20" placeholder="Verb" /> <br>
+        <input id='txtInput28' maxlength="20" placeholder="Verb" /> <br>
+      </div>
+      <div class="content-right">
+        <input id='txtInput6' maxlength="20" placeholder="Noun (place)" /> <br>
+        <input id='txtInput29' maxlength="20" placeholder="Noun" /> <br>
+        <input id='txtInput32' maxlength="20" placeholder="Noun" /> <br>
+        <input id='txtInput33' maxlength="20" placeholder="Noun" /> <br>
+        <input id='txtInput34' maxlength="20" placeholder="Noun" /> <br>
+        <input id='txtInput35' maxlength="20" placeholder="Noun" /> <br>
+        <input id='txtInput9' maxlength="20" placeholder="Noun" /> <br>
+        <input id='txtInput11' maxlength="20" placeholder="Noun" /> <br>
+        <input id='txtInput16' maxlength="20" placeholder="Noun" /> <br>
+        <input id='txtInput36' maxlength="20" placeholder="Noun" /> <br>
+        <input id='txtInput13' maxlength="20" placeholder="Noun (plural)" /> <br>
+        <input id='txtInput15' maxlength="20" placeholder="Noun (plural)" /> <br>
+        <input id='txtInput8' maxlength="20" placeholder="Noun (plural)" /> <br>
+        <input id='txtInput18' maxlength="20" placeholder="Noun (plural)" /> <br>
+        <input id='txtInput19' maxlength="20" placeholder="Noun (plural)" /> <br>
+        <input id='txtInput21' maxlength="20" placeholder="Noun (plural)" /> <br>
+        <input id='txtInput22' maxlength="20" placeholder="Noun (plural)" /> <br>
+        <input id='txtInput27' maxlength="20" placeholder="Noun (plural)" /> <br>
+      </div>
+      <div class="btn">
+        <button id='btnSpeak'>OK</button>
+      </div>
+      <app-root></app-root>
     </div>
-    <app-root></app-root>
-  </div>
+    </div>
     <script>
       var txtInput1 = document.querySelector('#txtInput1'); 
       var txtInput2 = document.querySelector('#txtInput2'); 
@@ -85,14 +94,17 @@
       var txtInput33 = document.querySelector('#txtInput33');
       var txtInput34 = document.querySelector('#txtInput34');
       var txtInput35 = document.querySelector('#txtInput35');
-
+      var txtInput36 = document.querySelector('#txtInput36');
       var btnSpeak = document.querySelector('#btnSpeak');
       var synth = window.speechSynthesis;
-      var voices = [];
       btnSpeak.addEventListener('click', () => {
-        var toSpeak = new SpeechSynthesisUtterance(txtInput1.value + "er, " + txtInput2.value + "er, more " + txtInput3.value + ". " + txtInput4.value + ", not " + txtInput5.value + "ing too much, regular exercise at the " + txtInput6.value + ",(3 days a week), getting on better with your associate employee contemporaries, at ease, " + txtInput7.value + "ing well, (no more microwave " + txtInput8.value + " and saturated " + txtInput9.value + "), a patient better " + txtInput10.value + "er, a safer " + txtInput11.value + ", (baby smiling in back seat), " + txtInput12.value + "ing well. (no bad dreams), no paranoia, careful to all " + txtInput13.value + ", (never " + txtInput14.value + "ing " + txtInput15.value + " down the plughole), keep in contact with old friends, (enjoy a " + txtInput16.value + " now and then), will frequently " + txtInput17.value + txtInput18.value + " at (moral) bank, (hole in wall), " + txtInput19.value + " for " + txtInput19.value + ", " + txtInput20.value + " but not in love, charity, standing orders on sundays, ring road supermarke, (no killing " + txtInput21.value + " or putting boiling water on the " + txtInput22.value + "), car wash, (also on sundays), no longer afraid of the dark or midday shadows, nothing so ridiculously teenage and desperate, nothing so childish, at a better pace, " + txtInput23.value + "er and more " + txtInput24.value + ", no chance of escape now, self employed, concerned (but powerless), an empowered and " + txtInput25.value + "  member of society, (pragmatism not idealism), will not " + txtInput26.value + " in public, less chance of illness, " + txtInput27.value + "that " + txtInput28.value + "in the wet, (shot of baby strapped in back seat), a good memory, still cries at a good " + txtInput29.value + ", still kisses with saliva, no longer  " + txtInput30.value + " and " + txtInput31.value + "like a cat tied to a " + txtInput32.value + " that's driven into frozen winter " + txtInput33.value + ", (the ability to laugh at weakness), calm, " + txtInput1.value + "er, " + txtInput2.value + "er, and more " + txtInput3.value + ", a " + txtInput34.value + " in a " + txtInput35.value + " on antibiotics");
-        synth.speak(toSpeak);
-        new Audio('assets/Radiohead - Fitter Happier (Instrumental).mp3').play()
+        if (txtInput1.value == "" || txtInput2.value == "" || txtInput3.value == "" || txtInput4.value == "" || txtInput5.value == "" || txtInput6.value == "" || txtInput7.value == "" || txtInput8.value == "" || txtInput9.value == "" || txtInput10.value == "" || txtInput11.value == "" || txtInput12.value == "" || txtInput13.value == "" || txtInput14.value == "" || txtInput15.value == "" || txtInput16.value == "" || txtInput17.value == "" || txtInput18.value == "" || txtInput19.value == "" || txtInput20.value == "" || txtInput21.value == "" || txtInput22.value == "" || txtInput23.value == "" || txtInput24.value == "" || txtInput25.value == "" || txtInput26.value == "" || txtInput27.value == "" || txtInput28.value == "" || txtInput29.value == "" || txtInput30.value == "" || txtInput31.value == "" || txtInput32.value == "" || txtInput33.value == "" || txtInput34.value == "" || txtInput35.value == "" || txtInput36.value == "")
+          console.log("A field was left empty");
+        else {
+          var toSpeak = new SpeechSynthesisUtterance(txtInput1.value + "er, " + txtInput2.value + "er, more " + txtInput3.value + ". " + txtInput4.value + ", not " + txtInput5.value + "ing too much, regular exercise at the " + txtInput6.value + ",(3 days a week), getting on better with your associate employee contemporaries, at ease, " + txtInput7.value + "ing well, (no more microwave " + txtInput8.value + " and saturated " + txtInput9.value + "), a patient better " + txtInput10.value + "er, a safer " + txtInput11.value + ", (baby smiling in back seat), " + txtInput12.value + "ing well. (no bad dreams), no paranoia, careful to all " + txtInput13.value + ", (never " + txtInput14.value + "ing " + txtInput15.value + " down the plughole), keep in contact with old friends, (enjoy a " + txtInput16.value + " now and then), will frequently " + txtInput17.value + txtInput18.value + " at (moral) bank, (hole in wall), " + txtInput19.value + " for " + txtInput19.value + ", " + txtInput20.value + " but not in love, charity, standing orders on sundays, ring road supermarke, (no killing " + txtInput21.value + " or putting boiling water on the " + txtInput22.value + "), car wash, (also on sundays), no longer afraid of the " + txtInput36.value + " or midday shadows, nothing so ridiculously teenage and desperate, nothing so childish, at a better pace, " + txtInput23.value + "er and more " + txtInput24.value + ", no chance of escape now, self employed, concerned (but powerless), an empowered and " + txtInput25.value + "  member of society, (pragmatism not idealism), will not " + txtInput26.value + " in public, less chance of illness, " + txtInput27.value + "that " + txtInput28.value + "in the wet, (shot of baby strapped in back seat), a good memory, still cries at a good " + txtInput29.value + ", still kisses with saliva, no longer  " + txtInput30.value + " and " + txtInput31.value + "like a cat tied to a " + txtInput32.value + " that's driven into frozen winter " + txtInput33.value + ", (the ability to laugh at weakness), calm, " + txtInput1.value + "er, " + txtInput2.value + "er, and more " + txtInput3.value + ", a " + txtInput34.value + " in a " + txtInput35.value + " on antibiotics");
+          synth.speak(toSpeak);
+          new Audio('assets/Radiohead - Fitter Happier (Instrumental).mp3').play() 
+        }
       });
     </script>
 </body>

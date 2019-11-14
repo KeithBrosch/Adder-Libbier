@@ -6,16 +6,61 @@
   margin: 0;
   padding: 0;
 }
-.content{
-  height: 100vh;
-  width: 100vw;
+.content {
+  height: auto;
+  min-height: 100vh;
+  margin: auto;
   background-image: url(assets/OKComputer.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.content-inner{
+.content-left, .content-right {
+  display: block;
+  margin-top: 20px;
   text-align: center;
-  width: 80%;
-  margin: auto;
 }
+
+.content-inner{
+  width: 50%;
+  margin: auto;
+  min-height: 100vh;
+}
+
+.btn{
+  clear: both;
+  text-align: center;
+}
+
+@media only screen and (min-width: 780px){
+  .content-left {
+    float: left;
+  }
+
+  .content-right {
+    float: right;
+  }
+}
+
+input{
+  margin: 2px 0;
+  padding: 5px 0;
+}
+
+.btn button{
+  width: 100px;
+  height: 30px;
+  margin: 30px 0;
+}
+
+.footer{
+  text-align: center;
+}
+
+  .footer a {
+    color: #ffaa1d;
+    text-decoration: none;
+  }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
