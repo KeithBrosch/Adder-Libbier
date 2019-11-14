@@ -1,0 +1,21 @@
+.hide{
+  display: none;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.content{
+  height: 100vh;
+  width: 100vw;
+  background-image: url(assets/OKComputer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content-inner{
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
